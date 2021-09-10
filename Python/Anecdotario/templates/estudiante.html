@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-5">
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <p>{{message}}</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+<div class="card card-body">
+
+        <form action="agg_estudiante" method="POST">
+
+            <div class="form-group">
+                <input type="text" name="nombres" required placeholder="Nombre(s)" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="apellidos" required placeholder="Aapellidos" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Género</label>
+                <select name="sexo" id="sexo" class="form-control">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="grado">Grado</label>
+                <select id="grado" name="grado" class="form-control">
+                    <option value="1">Primero</option>
+                    <option value="2">Segundo</option>
+                    <option value="3">Tercero</option>
+                    <option value="4">Cuarto</option>
+                    <option value="5">Quinto</option>
+                    <option value="6">Sexto</option>
+                    <option value="7">Séptimo</option>
+                    <option value="8">Octavo</option>
+                    <option value="9">Noveno</option>
+                    <option value="10">Décimo</option>
+                    <option value="11">Undécimo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha_nac" id="fecha" required class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="direccion" required placeholder="Dirección actual" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="num_doc" required placeholder="Número de docuemnto" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" required placeholder="Email" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="telefono" required placeholder="Número telefónico" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="nombre_acu" required placeholder="Nombre de acudiente" class="form-control">        
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="doc_acudiente" required placeholder="Número de documento de acudiente" class="form-control"> 
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Guardar
+                </button>  
+            </div>
+        </form>
+    </div>
+</div>
+  
+  <div class="col-md-7">
+  
+        <table class="table table-striped table-bordered bg-white table-sm">
+            <thead>
+                <tr>
+                    <td><b>Nombre(s)</b></td>
+                    <td><b>Apellidos</b></td>
+                    <td><b>Género</b></td>
+                    <td><b>Grado</b></td>
+                    <td><b>Fecha de nacimeinto</b></td>
+                    <td><b>Direccion</b></td>
+                    <td><b>No. Documento</b></td>
+                    <td><b>Email</b></td>
+                    <td><b>Teléfono</b></td>
+                    <td><b>Nombre Acudiente</b></td>
+                    <td><b>Doc. Acudiente</b></td>
+                    <td><b>Editar</b></td>
+                    <td><b>Eliminar</b></td>
+                </tr>
+            </thead>
+    
+            <tbody>
+            {% for dato in datos %}
+                <tr>
+                    <td>{{dato.1}}</td>
+                    <td>{{dato.2}}</td>
+                    <td>{{dato.3}}</td>
+                    <td>{{dato.4}}</td>
+                    <td>{{dato.5}}</td>
+                    <td>{{dato.6}}</td>
+                    <td>{{dato.7}}</td>
+                    <td>{{dato.8}}</td>
+                    <td>{{dato.9}}</td>
+                    <td>{{dato.10}}</td>
+                    <td>{{dato.11}}</td>
+                    <td>
+                        <a class="btn btn-secondary" href="/edit_estudiante/{{ dato.0 }}">✎</a>
+                    </td>
+                    <td>
+                        <a onclick="return confirm('¿Estás seguro de eliminar éste estudiante?')" href="/eliminar_estudiante/{{dato.0}}" class="btn btn-danger btn-delete">X</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+  </div>
+</div>
+    
+
+  {% endblock %}

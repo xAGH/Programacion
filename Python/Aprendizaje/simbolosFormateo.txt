@@ -1,0 +1,9 @@
+Símbolos de formateo en python:
+
+%c => Caracter
+%s => Conversion de string
+%d => firma decimal o entera
+%u => Valor decimal o entero indefinido
+%o => Entero octal
+%x => Entero hexadecimal, minúsculas
+%X => Entero hexadecimal, mayúscula

@@ -1,0 +1,7 @@
+Caracteres especiales en python:
+
+\n => Newline
+\t => Horizontal Tab
+\\ => Barra invertida
+\' => Comilla simple
+\" => Comilla doble

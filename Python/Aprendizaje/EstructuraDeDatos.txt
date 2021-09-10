@@ -1,0 +1,12 @@
+Linear => Una estructura de datos secuencial y continua por naturaleza. Se puede acceder a los datos de forma secuencial.
+          Ejemplo: array, linkedlist, stack and queue
+
+No linear => Esta estructura de datos está organizada de una forma aleatoria.
+             Ejemplo: Tree, hash, binary tree y graph
+
+
+Tipos de estructura de datos en python:
+    1) Listas.
+    2) Tuplas.
+    3) Sets.
+    4) Diccionario.

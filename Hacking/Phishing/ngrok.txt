@@ -1,0 +1,6 @@
+Descargar negrok: https://ngork.com/download
+
+Conectar user: ./ngrok authtoken <your_auth_token>
+
+Inicializar servicio local: ngrok https <server>
+

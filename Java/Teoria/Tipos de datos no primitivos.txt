@@ -1,0 +1,3 @@
+* LOS TIPOS DE DATOS NO PRIMITIVOS CUENTAN CON MÉTODOS Y PUEDEN ALMACENAR NULL *
+Integer --> Permite almacenar números y null.
+String --> Permite almacenar cadenas de texto encerrada entre comillas dobles ("").

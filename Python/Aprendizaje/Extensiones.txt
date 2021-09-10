@@ -1,0 +1,12 @@
+Antes de la version 3.0:
+
+.py => Scripts regulares
+.py3 => Python3 script (raramente utilizado)
+.pyc => Bytecode compilado o scripts compilados
+.pyd => Archivo dll de windows
+.pyo => Archivo pyc optimizado
+
+
+Despues de la version 3.0:
+.pyw => Script de python para windows.
+.pyz => Archivo de python comprimido

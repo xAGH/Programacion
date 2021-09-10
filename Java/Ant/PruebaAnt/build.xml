@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<project name="PruebaAnt" default="compile" basedir=".">
+
+    <target name="compile" description="Esto compila el código.">
+        <mkdir dir="build"/>
+        <javac srcdir="source" destdir="build" source="1.8" target="1.8" includeantruntime="false"/>
+    </target>
+
+    <target name="run" depends="compile" description="Esto corre el código.">
+        <java classname="Primero" fork="true">
+            <classpath>
+                <path location="build"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="doc" description="Esto documenta el código.">
+        <mkdir dir="documentation"/>
+        <javadoc destdir="documentation">
+            <fileset dir="source">
+                <include name="**/*.java"/>
+            </fileset>
+        </javadoc>
+    </target>
+
+    <target name="clean" description="Esto elimina aquello que se le especifique.">
+        <delete dir="build"/>
+        <delete dir="documentation"/>
+    </target>
+
+</project>

@@ -1,0 +1,6 @@
+P => Paréntesis
+E => Exponencial
+M => Multiplicación
+D => División
+A => Adición
+S => Substracción

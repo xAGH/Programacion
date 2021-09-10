@@ -1,0 +1,5 @@
+git clone https://github.com/Mebus/cupp.git
+
+python3 cupp.py -i
+
+Devuelve un archivo txt con posibles contraseñas.

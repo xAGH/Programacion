@@ -1,0 +1,23 @@
+ls --> Listar los contenidos de la carpeta en la que se está situada.
+
+pwd --> Ruta en la que se está.
+
+cp --> Copia archivos y los pega a la ruta especificada.
+
+mv --> Mueve archivos a la ruta especificada.
+
+clear --> Limpia la pantalla.
+
+nano --> Crea archivo de texto
+
+cat --> Lista el contenido de un archivo.
+
+rm --> Elimina un archivo.
+
+rmdir --> Elimina una carpeta.
+
+touch --> Crea archivos.
+
+grep --> Busca una palabra en un archivo indicado.
+
+chmod --> Dar permisos a un archivo.
