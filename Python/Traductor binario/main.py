@@ -1,7 +1,7 @@
 # Traductor que convierte decimales y caracteres a binario y visceversa. 
 
 # Importación de la libreria de conversores
-import conversor_binario
+from conversor_binario import *
 
 # Solicitud de datos decimal a binario
 def solicitud_decimal_binario():

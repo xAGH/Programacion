@@ -7,12 +7,4 @@ def factorial(numero):
     for i in range(1, numero+1): 
         factorial = factorial * i
     return factorial
-
 i=0
-
-
-
-
-
-
-
