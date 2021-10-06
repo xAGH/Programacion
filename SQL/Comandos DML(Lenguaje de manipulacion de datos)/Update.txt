@@ -1,0 +1,5 @@
+Una sentencia UPDATE de SQL es utilizada para modificar los valores de un conjunto de registros existentes
+en una tabla.
+
+Sintaxis básica:
+    UPDATE <tabla(s)> SET <campo> = <nuevo_valor_campo>, [<campoN> = <nuevo_valor_campoN>, ...] WHERE <condicion>;
