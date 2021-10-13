@@ -4,7 +4,7 @@
 # Importación de cv2
 import cv2
 
-imagen = cv2.imread('monedascontorno\contorno2.jpg')
+imagen = cv2.imread('monedascontorno\img\contorno.jpg')
 grises = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 _, imagen_umbral = cv2.threshold(grises,150,255, cv2.THRESH_BINARY)
 contorno, jerarquia = cv2.findContours(imagen_umbral, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
