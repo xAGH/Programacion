@@ -1,1 +1,0 @@
-final <tipo de variable> --> Valor constante al cual no se le puede modificar el valor.
