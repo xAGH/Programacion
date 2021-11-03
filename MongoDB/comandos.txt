@@ -1,0 +1,28 @@
+---------- Ver bases de datos ----------
+show dbs
+
+---------- Crear/Usar base de datos ----------
+use <nombreDB>
+
+---------- Ver colecciones ----------
+show collections
+
+---------- Crear coleccion / Insertar un documento en colleccion ----------
+db.<nombreColeccion>.insert(
+	{<nombreCampo>:<valor>, <nombreCampo2>:<valor2>...}
+)
+
+---------- Crear coleccion / Insertar varios documentos en collecciones ----------
+db.<nombreColeccion>.insertMany(
+	[
+		{<nombreCampo>:<valor>, <nombreCampo2>:<valor2>...}, 
+		{<nombreCampo>:<valor>, <nombreCampo2>:<valor2>...}.
+		...
+	]
+)
+
+---------- Borrar un documento ----------
+db.<nombreColeccion>.deleteOne({<campo>:<valor>, ...(<campo>:<valor>)})  // Elimina el primer registro que cumpla con los parametros dados.
+
+---------- Borrar varios documentos ----------
+db.<nombreColeccion>.deleteMany{<campo>:<valor>, ...(<campo>:<valor>)})  // Elimina todos los registros que cumplan con los parametros dados.
