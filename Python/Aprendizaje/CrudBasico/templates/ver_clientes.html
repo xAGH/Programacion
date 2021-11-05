@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <table>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                NOMBRE
+            </th>
+            <th>
+                APELLIDO
+            </th>
+            <th>
+                TELEFONO
+            </th>
+            <th>
+                EDITAR
+            </th>
+            <th>
+                ELIMINAR
+            </th>
+        </tr>
+        {% for i in range(cont) %}
+            <tr>
+                {% for dato in data[i] %}
+                    <td>
+                        {{ dato }}
+                    </td>
+                {% endfor %}
+                <td>
+                    <a class="editar" href="http://localhost:5000/cliente/editar/{{ data[i][0] }}">Editar</a>
+                </td>
+                <td>
+                    <a class="eliminar" href="http://localhost:5000/cliente/eliminar/{{ data[i][0] }}">Borrar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a class="btn" href="{{ url_for('index') }}">Index</a>
+{% endblock %}

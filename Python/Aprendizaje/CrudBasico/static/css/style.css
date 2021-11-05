@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:40px;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.btns{
+    margin-top: 100px;
+}
+
+table, tr, td, th{
+    border: 2px solid black;
+    border-collapse:collapse ;
+    padding:5px;
+}
+
+.eliminar{
+    color: red;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.editar{
+    color: blue;
+    font-size: 35px;
+    margin: 10px;
+}

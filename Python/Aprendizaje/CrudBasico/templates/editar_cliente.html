@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <form action="http://localhost:5000/cliente/edit/{{ data[0] }}" method="POST">
+        <input type="text" name="nombre" value="{{ data[1] }}">
+        <input type="text" name="apellido" value="{{ data[2] }}">
+        <input type="text" name="telefono" value="{{ data[3] }}">
+        <input type="submit" value="Enviar">
+    </form>
+    <a class="btn" href="{{ url_for('index') }}">Index</a>
+{% endblock %}

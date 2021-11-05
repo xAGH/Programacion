@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <form action="{{ url_for('cliente_agregar') }}" method="POST">
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+        <input type="text" name="telefono" placeholder="Ingrese su telefono">
+        <input type="submit" value="Enviar">
+    </form>
+    <a class="btn" href="{{ url_for('index') }}">Index</a>
+{% endblock %}
