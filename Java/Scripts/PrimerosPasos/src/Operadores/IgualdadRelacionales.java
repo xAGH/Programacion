@@ -19,7 +19,7 @@ public class IgualdadRelacionales {
         System.out.println("e = " + e);
         
         var f = cadena1.equals(cadena2); // Compara el contenido de cadenas.
-        System.out.println("e = " + e);
+        System.out.println("f = " + f);
 
         // OPERADORES RELACIONALES
         var g = a > b; // Mayor que > o el mayor o igual >=
