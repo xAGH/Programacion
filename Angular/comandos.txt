@@ -1,0 +1,17 @@
+* Comandos básicos de Angular *
+
+ng new <NombreProyecto> o ng n <NombreProyecto> -> Crea un nuevo proyecto de angular con el nombre específica.
+
+ng g c <NombreComponente> o ng generate component <NombreComponente> -> Crea un nueevo componente con los archivos
+necesarios: un archivo html que será la vista de nuestro componente, un archivo css que proporcionará los estilos
+a este y SOLO a este componente, un archivo typescript que servirá para elaborar la lógica del componente y un 
+archivo spec.ts que servirá para testear el componente. Cuenta con modificadores para indicar ciertas características,
+-t -> Indica que no agregue ni cree una ruta para los templates ya que estos se haran en linea.
+-s -> Indica que no agregue ni cree una ruta para los estilos ya que estos se haran en linea.
+
+
+ng serve o ng s-> Inicia el servidor de la app, predefinidamente en el puerto 4200. Cuenta con un modificador -o
+que sirve para abrir el navegador automaticamente, ejemplo: ng s -o
+
+npm install o npm i-> Instala las dependencias necesarias de un proyecto de Angular desde el package.json
+
