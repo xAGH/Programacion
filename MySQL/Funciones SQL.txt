@@ -1,8 +1,0 @@
-COALESCE(p1, p2, pn...) --> Retorna el primer valor de campo del parámetro pasado que no sea null. Es decir, si p1 es null retorna p2, si p2
-                            es null retorna el valor siguiente dado como parámetro. Si el valor es null y no se le pasan campos u opciones
-                            (como algún texto) adyacente, retorna el último valor validado aquneu éste sea null. Los parámetros pueden ser 
-                            nombres de campos, cadenas de texto o números.
-
-CONCAT(p1, p2, pn...) --> Retorna una cadena como resultado de la uniión de los parámetros pasados. Es decir, si le pasamos <p1, p2> el resultado
-                          retornado será <p1p2>, si le pasamos <p1," ", p2> el resultado retornado será <p1 p2>. Los parámetros pueden ser nombres
-                          de campos, cadenas de texto o números.

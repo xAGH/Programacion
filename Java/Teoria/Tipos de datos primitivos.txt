@@ -1,9 +1,0 @@
-* LOS TIPOS DE DATOS PRIMITIVOS NO CUENTAN CON MÉTODOS Y NO PUEDEN ALMACENAR NULL *
-long --> Ocupa 64 bits en memoria en memoria y tiene un rango desde -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807.
-int --> Ocupa 32 bits en memoria en memoria y tiene un rango desde -2,147,483,648 a 2,147,483,647.
-short --> Ocupa 16 bits en memoria y tiene un rango desde -32,768 a 32,767.
-byte --> Ocupa 8 bits en memoria y tiene un rango desde -128 a 127.
-double --> Ocupa 64 bits en memoria y su rango aproximado es de 4.9e-324 a 1.8e+308
-float --> Ocupa 32 bits en memoria y su rango aproximado es de 1.4e-045 a 3.4e+038
-char --> Ocupa 8 bits en memoria y almacena un caracter encerrado en comillas simples ('').
-boolean --> Ocupa 1 bit en memoria y almacena un valor booleano.
