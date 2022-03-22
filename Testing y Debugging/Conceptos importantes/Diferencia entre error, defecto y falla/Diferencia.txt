@@ -1,9 +1,0 @@
-Error: El responsable es el programador o el humano responsable y la solución está en el mismo código.
-
-
-Defecto: Desperfecto en un componente, no hace lo que debe hacer pero hace algo.
-
-
-Fallo: Manifestación física o visual de un defecto.
-
-Error --> Defecto --> Fallo
